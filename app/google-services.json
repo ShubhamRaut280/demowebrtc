@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270785556603",
+    "project_id": "backspace-c44b8",
+    "storage_bucket": "backspace-c44b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270785556603:android:54977fd9a8eac93a0b32de",
+        "android_client_info": {
+          "package_name": "com.shubham.backspace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByvKqjB2F8VC6v4yS6HlosxOSatDfhPZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

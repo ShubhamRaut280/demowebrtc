@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phoneAuthentication">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/popins"
+            android:text="Welcome !! Continue to app"
+            android:textAlignment="center"
+            android:textColor="@color/main2"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@id/appname"
+            android:fontFamily="@font/popins"
+            android:text="Login with phone number"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="18dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/mobileText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@id/welcome"
+            android:fontFamily="@font/popins"
+            android:text="Enter Mobile Number"
+            android:paddingStart="20dp"
+            android:textColor="@color/main2"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/inputMobileno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/mobileText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/curvecorner"
+            android:layout_marginEnd="58dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/getotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputMobileno"
+            android:background="@drawable/curvecorner"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/popins"
+            android:textSize="17dp"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginEnd="75dp"
+            android:layout_alignParentEnd="true"
+            android:text="Get OTP" />
+
+        <TextView
+            android:id="@+id/Otptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@id/getotp"
+            android:fontFamily="@font/popins"
+            android:visibility="gone"
+            android:text="Enter OTP"
+            android:paddingStart="20dp"
+            android:textColor="@color/main2"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/inputOTP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/Otptext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/curvecorner"
+            android:layout_marginEnd="58dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:visibility="gone"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/submitOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputOTP"
+            android:background="@drawable/curvecorner"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/popins"
+            android:textSize="17dp"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginEnd="75dp"
+            android:layout_alignParentEnd="true"
+            android:text="Submit OTP" />
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
