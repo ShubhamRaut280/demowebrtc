@@ -46,20 +46,6 @@
         android:layout_height="wrap_content"
         app:constraint_referenced_ids="endCall,micBtn,videoBtn" />
 
-    <ImageView
-        android:id="@+id/connectingImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg_blur" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/loadingGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="visible"
-        app:constraint_referenced_ids="connectingImage" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
